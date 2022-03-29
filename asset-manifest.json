@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/%20//mariiaStrozhyk.github.io/good-heart/build/static/css/main.073c9b0a.css",
-    "main.js": "/%20//mariiaStrozhyk.github.io/good-heart/build/static/js/main.a224b061.js",
-    "static/js/787.f62eff12.chunk.js": "/%20//mariiaStrozhyk.github.io/good-heart/build/static/js/787.f62eff12.chunk.js",
-    "static/media/logo.svg": "/%20//mariiaStrozhyk.github.io/good-heart/build/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
-    "index.html": "/%20//mariiaStrozhyk.github.io/good-heart/build/index.html",
-    "main.073c9b0a.css.map": "/%20//mariiaStrozhyk.github.io/good-heart/build/static/css/main.073c9b0a.css.map",
-    "main.a224b061.js.map": "/%20//mariiaStrozhyk.github.io/good-heart/build/static/js/main.a224b061.js.map",
-    "787.f62eff12.chunk.js.map": "/%20//mariiaStrozhyk.github.io/good-heart/build/static/js/787.f62eff12.chunk.js.map"
+    "main.css": "/%20//mariiaStrozhyk.github.io/good-heart/static/css/main.073c9b0a.css",
+    "main.js": "/%20//mariiaStrozhyk.github.io/good-heart/static/js/main.a58424ca.js",
+    "static/js/787.f62eff12.chunk.js": "/%20//mariiaStrozhyk.github.io/good-heart/static/js/787.f62eff12.chunk.js",
+    "static/media/logo.svg": "/%20//mariiaStrozhyk.github.io/good-heart/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "index.html": "/%20//mariiaStrozhyk.github.io/good-heart/index.html",
+    "main.073c9b0a.css.map": "/%20//mariiaStrozhyk.github.io/good-heart/static/css/main.073c9b0a.css.map",
+    "main.a58424ca.js.map": "/%20//mariiaStrozhyk.github.io/good-heart/static/js/main.a58424ca.js.map",
+    "787.f62eff12.chunk.js.map": "/%20//mariiaStrozhyk.github.io/good-heart/static/js/787.f62eff12.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.073c9b0a.css",
-    "static/js/main.a224b061.js"
+    "static/js/main.a58424ca.js"
   ]
 }
