@@ -1,0 +1,102 @@
+@import '../../utils/typography';
+@import '../../utils/variadbles';
+
+.infoForm {
+  width: 900px;
+  color: $mainDarkBlueColor;
+  font-family: Geometry;
+
+  &__title {
+    margin-bottom: 20px;
+    font-size: 50px;
+    text-align: center;
+    letter-spacing: 1px;
+  }
+
+  &__buttons {
+    display: flex;
+    justify-content: center;
+  }
+
+  &__submit {
+    text-align: center;
+    
+    &--button {
+      padding: 10px;
+    width: 200px;
+
+    background: linear-gradient(90deg, rgba(209,73,89,1) 0%, rgba(181,82,113,1) 51%, rgba(140,105,157,1) 100%);
+
+    font-family: Geometry;
+    color: white;
+    font-weight: 400;
+    border: transparent;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+
+      :focus {
+        box-shadow: 5px rgba(209,73,89,1);
+      }
+    }
+  }
+}
+
+.buttons {
+  padding: 5px;
+  margin-bottom: 30px;
+  width: 100px;
+
+  background-color: #fff;
+  color: $mainDarkBlueColor;
+  font-family: Geometry;
+  font-weight: 400;
+  border: 2px solid $mainDarkBlueColor;
+  border-radius: 5px 0 0 3px;
+  cursor: pointer;
+  transition: 0.3s;
+
+
+  &--right {
+    border-radius: 0 3px 3px 0;
+    border-left: 0;
+  }
+
+  &--active {
+    background-color: $mainDarkBlueColor;
+    color: white;
+  }
+}
+
+.info {
+  color: $lightGrey;
+  margin-bottom: 30px;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.part {
+  width: 380px;
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__input {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    font-size: 15px;
+    margin-bottom: 10px;
+  }
+}
+
+.input {
+  background-color: $inputbg;
+  height: 30px;
+  border: 1px solid transparent;
+  border-radius: 3px;
+}
