@@ -65,7 +65,7 @@ const TypeOfHelp: React.FC = () => {
         </div>
       </div>
 
-      <TypeOfPayment />
+      {selectedType !== '' && <TypeOfPayment />}
     </div>
   );
 };
