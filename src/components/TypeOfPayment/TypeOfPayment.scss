@@ -1,0 +1,109 @@
+@import '../../utils/variadbles';
+
+.payment {
+  display: flex;
+  margin-bottom: 30px;
+  padding: 10px;
+
+  border: 2px solid $typeOfHelp;
+  border-radius: 10px;
+
+  color: $lightGrey;
+  font-size: 13px;
+
+  &__types {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__title {
+    margin-bottom: 5px;
+  }
+
+  &__container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    color: white;
+  }
+
+  &__type {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+
+    width: 140px;
+    height: 60px;
+
+    background: $paymentType;
+    border: 1px solid transparent;
+    border-radius: 10px;
+
+    cursor: pointer;
+    transition: 0.3s;
+
+    &--active {
+      background-color: $typeOfHelpFocus;
+    }
+
+    &--title {
+      font-size: 20px;
+      font-style: italic;
+    }
+
+    &--description {
+      font-size: 10px;
+      font-weight: 300;
+    }
+  }
+}
+
+.card{
+  display: flex;
+  flex-direction: column;
+  height: 120px;
+  width: 300px;
+
+  padding: 20px;
+  background: $paymentType;
+  border-radius: 10px;
+
+  color: white;
+
+  &--active {
+    background: $typeOfHelpFocus;
+  }
+
+  &__title {
+    margin-bottom: 5px;
+  }
+
+  &__number {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+  }
+
+  &__input {
+    width: 60px;
+    height: 30px;
+
+    border: 1px solid transparent;
+    border-radius: 5px;
+  }
+
+  &__info {
+    display: flex;
+    justify-content: space-between;
+
+    &--input {
+      width: 110px;
+      height: 30px;
+
+      border: 1px solid transparent;
+      border-radius: 5px;
+    }
+  }
+}

@@ -1,3 +1,5 @@
+@import '../../utils/variadbles';
+
 .help {
   display: flex;
   flex-direction: column;
@@ -10,10 +12,87 @@
   }
 
   &__subtitle {
-    margin-bottom: 10px;
+    margin-bottom: 20px;
     font-size: 15px;
     font-weight: 200;
     text-align: center;
     letter-spacing: 0.1px;
+  }
+
+  &__types {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.type {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 40px;
+  margin-bottom: 40px;
+  color: $lightGrey;
+
+  &__active {
+    color: $mainDarkBlueColor;
+
+    &::before {
+      position: absolute;
+      content: '';
+      top: 585px;
+      border: 20px solid transparent;
+      border-bottom-color: white;
+      filter: drop-shadow(0 -0.06px 0.6px $typeOfHelp);
+    }
+  }
+
+  &:hover {
+    color: $mainDarkBlueColor;
+  }
+
+  &__button {
+    height: 50px;
+    width: 50px;
+    margin-right: 10px;
+
+    border: 2px solid $typeOfHelp;
+    border-radius: 10px;
+
+    background-color: white;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 70%;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+
+    &:hover {
+      background-color: $typeOfHelpFocus;
+      border-color: transparent;
+    }
+
+    &:focus {
+      background-color: $typeOfHelpFocus;
+      border-color: transparent;
+    }
+
+
+    &--hand {
+      background-image: url(../../icons/hand.png);
+    }
+
+    &--portmone {
+      background-image: url(../../icons/portmonet.png);
+    }
+
+    &--clothes {
+      background-image: url(../../icons/clothes.png);
+    }
+
+    &--heart {
+      background-image: url(../../icons/heart.png);
+    }
   }
 }

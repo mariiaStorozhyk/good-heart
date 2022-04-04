@@ -23,20 +23,20 @@
     
     &--button {
       padding: 10px;
-    width: 200px;
+      width: 200px;
 
-    background: linear-gradient(90deg, rgba(209,73,89,1) 0%, rgba(181,82,113,1) 51%, rgba(140,105,157,1) 100%);
+      background: linear-gradient(90deg, rgba(209,73,89,1) 0%, rgba(181,82,113,1) 51%, rgba(140,105,157,1) 100%);
 
-    font-family: Geometry;
-    color: white;
-    font-weight: 400;
-    border: transparent;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: 0.3s;
+      font-family: Geometry;
+      color: white;
+      font-weight: 400;
+      border: transparent;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: 0.3s;
 
-      :focus {
-        box-shadow: 5px rgba(209,73,89,1);
+      &:hover {
+        box-shadow: 1px 1px 20px 3px rgba(250,25,25,0.75);;
       }
     }
   }
