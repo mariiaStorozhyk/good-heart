@@ -1,4 +1,4 @@
-np## [DEMO LINK](https://mariiastorozhyk.github.io/good-heart/)
+## [DEMO LINK](https://mariiastorozhyk.github.io/good-heart/)
 ### Technologies used :
 - React.js
 - TypeScript
