@@ -17,9 +17,13 @@ const TypeOfHelp: React.FC = () => {
 
       <div className="help__types">
         <div className="type">
-          <button 
+          <button
             type="button"
-            className='type__button type__button--hand'
+            className={classNames(
+              'type__button',
+              'type__button--hand',
+              {'type__button--active': selectedType === 'hand'}
+            )}
             onClick={() => setSelectedType('hand')}
           ></button>
           
@@ -31,7 +35,11 @@ const TypeOfHelp: React.FC = () => {
         <div className="type">
           <button
             type="button" 
-            className='type__button type__button--portmone'
+            className={classNames(
+              'type__button',
+              'type__button--portmone',
+              {'type__button--active': selectedType === 'portmone'}
+            )}
             onClick={() => setSelectedType('portmone')}
           ></button>
 
@@ -43,7 +51,11 @@ const TypeOfHelp: React.FC = () => {
         <div className="type">
           <button
             type="button"
-            className='type__button type__button--clothes'
+            className={classNames(
+              'type__button',
+              'type__button--clothes',
+              {'type__button--active': selectedType === 'clothes'}
+            )}
             onClick={() => setSelectedType('clothes')}
           ></button>
 
@@ -55,7 +67,11 @@ const TypeOfHelp: React.FC = () => {
         <div className="type">
           <button
             type="button"
-            className='type__button type__button--heart'
+            className={classNames(
+              'type__button',
+              'type__button--heart',
+              {'type__button--active': selectedType === 'heart'}
+            )}
             onClick={() => setSelectedType('heart')}
           ></button>
 

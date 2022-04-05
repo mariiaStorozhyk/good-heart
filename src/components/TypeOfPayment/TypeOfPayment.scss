@@ -1,9 +1,16 @@
 @import '../../utils/variadbles';
+@import '../../utils/mixins';
+
 
 .payment {
   display: flex;
+  flex-direction: column;
   margin-bottom: 30px;
   padding: 10px;
+
+  @include onDesktop {
+    flex-direction: row;
+  }
 
   border: 2px solid $typeOfHelp;
   border-radius: 10px;
@@ -23,8 +30,13 @@
   &__container {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-around;
     gap: 20px;
     color: white;
+
+    @include onDesktop{
+      justify-content: start;
+    }
   }
 
   &__type {
@@ -34,7 +46,7 @@
     align-items: center;
     gap: 10px;
 
-    width: 140px;
+    width: 100px;
     height: 60px;
 
     background: $paymentType;
@@ -44,27 +56,57 @@
     cursor: pointer;
     transition: 0.3s;
 
+    @include onDesktop {
+      width: 140px;
+      height: 60px;
+    }
+
     &--active {
       background-color: $typeOfHelpFocus;
     }
 
     &--title {
-      font-size: 20px;
+      font-size: 15px;
       font-style: italic;
+
+      @include onDesktop {
+        font-size: 20px;
+      }
     }
 
     &--description {
-      font-size: 10px;
+      font-size: 5px;
       font-weight: 300;
+
+      @include onDesktop{
+        font-size: 10px;
+      }
+    }
+  }
+
+  &__card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    @include onDesktop {
+      justify-content: start;
+      align-items: flex-start;
     }
   }
 }
 
-.card{
+.card {
   display: flex;
   flex-direction: column;
-  height: 120px;
-  width: 300px;
+  width: 200px;
+  height: 100px;
+
+  @include onDesktop {
+    width: 300px;
+    height: 120px;
+  }
 
   padding: 20px;
   background: $paymentType;
@@ -87,11 +129,21 @@
   }
 
   &__input {
-    width: 60px;
-    height: 30px;
+    width: 40px;
+    height: 20px;
 
     border: 1px solid transparent;
     border-radius: 5px;
+
+    font-family: Geometry, Helvetica, sans-serif;
+    font-weight: 300;
+
+    outline: none;
+
+    @include onDesktop {
+      width: 60px;
+      height: 30px;
+    }
   }
 
   &__info {
@@ -99,11 +151,21 @@
     justify-content: space-between;
 
     &--input {
-      width: 110px;
-      height: 30px;
+      width: 90px;
+      height: 20px;
 
       border: 1px solid transparent;
       border-radius: 5px;
+
+      font-family: Geometry, Helvetica, sans-serif;
+      font-weight: 300;
+
+      outline: none;
+
+      @include onDesktop {
+        width: 110px;
+        height: 30px;
+      }
     }
   }
 }

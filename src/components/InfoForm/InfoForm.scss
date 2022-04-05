@@ -1,10 +1,23 @@
 @import '../../utils/typography';
 @import '../../utils/variadbles';
+@import '../../utils/mixins';
 
 .infoForm {
-  width: 900px;
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   color: $mainDarkBlueColor;
   font-family: Geometry;
+
+  @include onTablet{
+    width: 700px;
+  }
+
+  @include onDesktop{
+    width: 900px;
+  }
 
   &__title {
     margin-bottom: 20px;
@@ -16,6 +29,18 @@
   &__buttons {
     display: flex;
     justify-content: center;
+  }
+
+  &__info {
+    width: 300px;
+
+    @include onTablet{
+      width: 700px;
+    }
+  
+    @include onDesktop{
+      width: 900px;
+    }
   }
 
   &__submit {
@@ -73,8 +98,14 @@
   margin-bottom: 30px;
 
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  @include onDesktop {
+    flex-direction: row;
+    justify-content: space-between;
+  }
 }
 
 .part {
@@ -99,4 +130,9 @@
   height: 30px;
   border: 1px solid transparent;
   border-radius: 3px;
+  outline: none;
+
+  font-family: Geometry, Helvetica, sans-serif;
+  font-weight: 300;
+
 }

@@ -1,8 +1,18 @@
 @import '../../utils/variadbles';
+@import '../../utils/mixins';
 
 .help {
   display: flex;
   flex-direction: column;
+  width: 300px;
+
+    @include onTablet{
+      width: 700px;
+    }
+  
+    @include onDesktop{
+      width: 900px;
+    }
 
   &__title {
     margin-bottom: 5px;
@@ -21,8 +31,13 @@
 
   &__types {
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
     align-items: center;
+
+    @include onDesktop{
+      flex-direction: row;
+    }
   }
 }
 
@@ -38,12 +53,17 @@
     color: $mainDarkBlueColor;
 
     &::before {
+      display: none;
       position: absolute;
       content: '';
       top: 585px;
       border: 20px solid transparent;
       border-bottom-color: white;
       filter: drop-shadow(0 -0.06px 0.6px $typeOfHelp);
+
+      @include onDesktop {
+        display: block;
+      }
     }
   }
 
@@ -73,11 +93,10 @@
       border-color: transparent;
     }
 
-    &:focus {
+    &--active {
       background-color: $typeOfHelpFocus;
       border-color: transparent;
     }
-
 
     &--hand {
       background-image: url(../../icons/hand.png);

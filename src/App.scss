@@ -1,4 +1,5 @@
 @import './utils/typography';
+@import './utils/mixins';
 
 #root {
   margin: 0 auto;
@@ -17,8 +18,17 @@ p{
 
 .app {
   margin: 0, auto;
+  width: 300px;
   display: flex;
   justify-content: center;
   align-items: center;
   font-family: Geometry;
+
+  @include onTablet{
+    width: 700px;
+  }
+
+  @include onDesktop{
+    width: 900px;
+  }
 }

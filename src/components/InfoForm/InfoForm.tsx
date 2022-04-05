@@ -89,7 +89,8 @@ const InfoForm: React.FC = () => {
           <div className="part part__container">
             <div className="part__input">
               <p>Ім'я</p>
-              <input 
+              <input
+                required
                 type="text"
                 value={name}
                 className="input"
@@ -99,7 +100,8 @@ const InfoForm: React.FC = () => {
 
             <div className="part__input">
               <p>Прізвище</p>
-              <input 
+              <input
+                required
                 type="text"
                 value={surname}
                 className="input"
@@ -110,7 +112,8 @@ const InfoForm: React.FC = () => {
             
           <div className="part__input">
             <p>Назва компанії, організації</p>
-            <input 
+            <input
+              required
               type="text"
               value={company} 
               className="input"
@@ -120,9 +123,10 @@ const InfoForm: React.FC = () => {
 
           <div className="part__input">
             <p>Email-адрес</p>
-            <input 
+            <input
+              required
               type="email"
-              value={email} 
+              value={email}
               className="input"
               onChange={(e) => setEmail(e.target.value)}
             />
@@ -130,9 +134,9 @@ const InfoForm: React.FC = () => {
 
           <div className="part__input">
             <p>Номер телефону</p>
-            <input 
+            <input
               type="tel"
-              value={number} 
+              value={number}
               className="input"
               onChange={(e) => onlyNumbers(e, setNumber)}
             />
@@ -142,9 +146,10 @@ const InfoForm: React.FC = () => {
         <div className="info__part part">
           <div className="part__input">
             <p>Країна</p>
-            <input 
+            <input
+              required
               type="text"
-              value={country} 
+              value={country}
               className="input"
               onChange={(e) => setCountry(e.target.value)}
             />
@@ -153,18 +158,18 @@ const InfoForm: React.FC = () => {
           <div className="part part__container">
             <div className="part__input">
               <p>Місто</p>
-              <input 
+              <input
                 type="text"
-                value={city} 
+                value={city}
                 className="input"
                 onChange={(e) => setCity(e.target.value)}
               />
             </div>
             <div className="part__input">
               <p>Штат</p>
-              <input 
+              <input
                 type="text"
-                value={state} 
+                value={state}
                 className="input"
                 onChange={(e) => setState(e.target.value)}
               />
@@ -173,7 +178,7 @@ const InfoForm: React.FC = () => {
 
           <div className="part__input">
             <p>Адреса</p>
-            <input 
+            <input
               type="text"
               value={address}
               className="input"
@@ -183,7 +188,7 @@ const InfoForm: React.FC = () => {
 
           <div className="part__input">
             <p>Поштовий індекс</p>
-            <input 
+            <input
               type="text"
               value={postIndex} 
               className="input"

@@ -11,6 +11,14 @@ const TypeOfPayment = () => {
   const [thirdCardNumber, setThirdCardNumber] = useState('');
   const [fourthCardNumber, setFourthCardNumber] = useState('');
 
+  const [validity, setValidity] = useState('');
+
+  const validityChange = (text: string) => {
+    setValidity(text.length === 3 && !text.includes("/")
+      ? `${text.substring(0, 2)}/${text.substring(2)}`
+      : text)
+  };
+
   return(
     <div className="payment">
       <div className="payment__types">
@@ -143,6 +151,10 @@ const TypeOfPayment = () => {
             <div className="card__info--date">
               <p className="card__title">Термін дії</p>
               <input
+                placeholder='мм/рр'
+                maxLength={5}
+                value={validity}
+                onChange={(e) => validityChange(e?.target.value)}
                 className="card__info--input"
               />
             </div>
